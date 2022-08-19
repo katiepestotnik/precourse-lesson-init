@@ -72,4 +72,15 @@ const counter = (str, letter)=>{
     }
     return letters.length
   }
-  console.log(counter('happy days', 'y'))
+console.log(counter('happy days', 'y'))
+  
+function howMany(str, letter){
+  let count = 0
+  for(let i=0;i<str.length;i++){
+    if(str[i]===letter){
+      count = count + 1
+    }
+  }
+  return count
+}
+console.log(howMany('three', 'e'))
